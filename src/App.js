@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ScrollingText from "./ScrollingText";
+import EmptyBlock from "./EmptyBlock";
+import CircularSlider from "./CircularSlider";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>gsap test</h1>
+      <EmptyBlock />
+      <ScrollingText text="this is react app for test gsap library this is react app for test gsap library" />
+      <EmptyBlock />
+      <CircularSlider />
+      <EmptyBlock />
     </div>
   );
 }
